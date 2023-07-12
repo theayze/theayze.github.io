@@ -1,285 +1,873 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+	<!DOCTYPE html>
+	<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+	<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+	<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
+	<!--- basic page needs
+	================================================== -->
+	<meta charset="utf-8">
+		<title>Kards</title>
+		<meta name="description" content="">  
+		<meta name="author" content="">
 
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+	<!-- mobile specific metas
+	================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Fahmi Mikail</h1>
-            <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
+		<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="css/base.css">  
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor.css">     
 
-        <div id="lead-overlay"></div>
+	<!-- script
+	================================================== -->   
+		<script src="js/modernizr.js"></script>
+		<script src="js/pace.min.js"></script>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+	<!-- favicons
+		================================================== -->
+		<link rel="icon" type="image/png" href="favicon.png">
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Hello, I'm Fahmi Mikail, a passionate web developer currently pursuing a Bachelor's degree in
-                        Computer Science with a specialization in Software Engineering at Multimedia University (MMU) in
-                        Cyberjaya, Selangor. With a strong foundation in HTML, CSS, and JavaScript, I strive to create
-                        visually appealing and user-friendly websites. I'm particularly fascinated by the dynamic nature
-                        of web development. Constantly seeking to expand my skill set, I am enthusiastic about learning
-                        new frameworks and staying updated with the latest trends in the industry. I am committed to
-                        delivering high-quality, efficient, and secure web solutions. I am excited to contribute my
-                        expertise to future collaborations and opportunities in the world of web development.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
+	</head>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2022 – October 2022">
-                <h3>Ivy Matrix Sdn. Bhd.</h3>
-                <h4>Front-End Developer (Part-Time Freelancer)</h4>
-                <p>
-                    Part of Sabah Workers Integrated Management System (SWIMS) Front-End Development team. Developed an
-                    interactive and responsive web application with a modern
-                    front-end framework and an intuitive user interface using Bootstrap.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
+	<body id="top">
 
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Multimedia University, Cyberjaya</h3>
-            <span class="education-date">2021 — Present</span>
-            <h4>Bachelor's Degree in Computer Science (Hons)</h4>
-            <ul>
-                <li>
-                    CGPA of 3.09
-                </li>
-                <li>
-                    Dean's List Trimester 1 (GPA of 3.71) - 2021/2022
-                </li>
-                <li>
-                    Expected to graduate June 2024
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
+		<!-- header 
+	================================================== -->
+	<header>   	
+		<div class="row">
 
-        <div class="education-block">
-            <h3>Multimedia University, Cyberjaya</h3>
-            <span class="education-date">2018 — 2021</span>
-            <h4>Diploma in Information and Technology</h4>
-            <ul>
-                <li>
-                    Graduated with a CGPA of 3.15
-                </li>
-                <li>
-                    Dean's List Trimester 1 (GPA of 3.89) - 2020/2021
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
+			<div class="top-bar">
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam
-                            volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
-                            eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+				<div class="logo">
+					<a href="index.html">FAHMI</a>
+				</div>		      
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam
-                            volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
-                            eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
+				<nav id="main-nav-wrap">
+						<ul class="main-navigation">
+							<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+							<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+							<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+							<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+							<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+							<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+							<li><a href="styles.html" title="">Style Demo</a></li>				
+						</ul>
+					</nav>    		
+			</div> <!-- /top-bar --> 
+			
+		</div> <!-- /row --> 		
+	</header> <!-- /header -->
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
+		<!-- intro section
+	================================================== -->
+	<section id="intro">   
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+		<div class="intro-overlay"></div>	
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2022</span> YOUR NAME
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
+		<div class="intro-content">
+			<div class="row">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-</body>
+				<div class="col-twelve">
 
-</html>
+					<h5>Hello, World.</h5>
+					<h1>I'm Fahmi Mikail.</h1>
+
+					<p class="intro-position">
+						<span>Front-end Developer</span>
+						<span>Software Engineer</span> 
+					</p>
+
+					<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+				</div>  
+				
+			</div>   		 		
+		</div> <!-- /intro-content --> 
+
+		<ul class="intro-social">        
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa fa-github"></i></a></li>
+		</ul> <!-- /intro-social -->      	
+
+	</section> <!-- /intro -->
+
+
+	<!-- about section
+	================================================== -->
+	<section id="about">  
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>About</h5>
+				<h1>Let me introduce myself.</h1>
+
+				<div class="intro-info">
+
+					<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+					<p class="lead">Hello, I'm Fahmi Mikail, a passionate web developer currently pursuing a Bachelor's degree in Computer Science with a specialization in Software Engineering at Multimedia University (MMU) in Cyberjaya, Selangor. With a strong foundation in HTML, CSS, and JavaScript, I strive to create visually appealing and user-friendly websites. I'm particularly fascinated by the dynamic nature of web development. Constantly seeking to expand my skill set, I am enthusiastic about learning new frameworks and staying updated with the latest trends in the industry. I am committed to delivering high-quality, efficient, and secure web solutions. I am excited to contribute my expertise to future collaborations and opportunities in the world of web development.</p>
+				</div>   			
+
+			</div>   		
+		</div> <!-- /section-intro -->
+
+		<div class="row about-content">
+
+			<div class="col-six tab-full">
+
+				<h3>Profile</h3>
+
+				<ul class="info-list">
+					<li>
+						<strong>Fullname:</strong>
+						<span>Fahmi Mikail bin Fahrid</span>
+					</li>
+					<li>
+						<strong>Birth Date:</strong>
+						<span>October 29, 2000</span>
+					</li>
+					<li>
+						<strong>Email:</strong>
+						<span>fahmimikail86@gmail.com</span>
+					</li>
+
+				</ul> <!-- /info-list -->
+
+			</div>
+
+			<div class="col-six tab-full">
+
+				<h3>Skills</h3>
+
+					<ul class="skill-bars">
+					<li>
+						<strong>HTML</strong>
+					</li>
+					<li>
+						<strong>CSS</strong>
+					</li>
+					<li>
+						<strong>JavaScript</strong>
+					</li>
+					<li>
+						<strong>PHP</strong>
+					</li>
+					<li>
+						<strong>Bootstrap</strong>
+					</li>
+					<li>
+						<strong>Tailwind</strong>
+					</li>
+					<li>
+						<strong>Laravel</strong>
+					</li>
+					<li>
+						<strong>HTML5</strong>
+					</li>
+					<li>
+						<strong>Figma</strong>
+					</li>
+					<li>
+						<strong>VueJS</strong>
+					</li>
+					<li>
+						<strong>Tailwind</strong>
+					</li>
+		
+					</ul> <!-- /skill-bars -->		
+
+			</div>
+
+		</div>
+
+		<div class="row button-section">
+			<div class="col-twelve">
+				<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+				<a href="./file/FAHMI MIKAIL_RESUME.pdf" title="Download CV" class="button button-primary">Download Resume</a>
+			</div>   		
+		</div>
+
+	</section> <!-- /process-->    
+
+
+	<!-- resume Section
+	================================================== -->
+		<section id="resume" class="grey-section">
+
+			<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Resume</h5>
+				<h1>More of my credentials.</h1>
+
+			</div>   		
+		</div> <!-- /section-intro--> 
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>Work Experience</h2>
+
+			</div> <!-- /resume-header -->
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Front-end Developer (Part-Time Freelancer)</h3>
+							<p>September 2022 - October 2022</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Ivy Matrix Sdn. Bhd</h4>
+							<p>Part of Sabah Workers Integrated Management System (SWIMS) Front-End Development team. Developed an interactive and responsive web application with a modern front-end framework and an intuitive user interface using Bootstrap.</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+
+				</div> <!-- /timeline-wrap -->   			
+
+			</div> <!-- /col-twelve -->
+			
+		</div> <!-- /resume-timeline -->
+		
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>Education</h2>
+
+			</div> <!-- /resume-header -->
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Bachelor's Degree in Computer Science (Hons)</h3>
+							<p>2021 — Present</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Multimedia University, Cyberjaya</h4>
+								<ul>
+									<li>CGPA of 3.09</li>
+									<li>Dean's List Trimester 1 (GPA of 3.71) - 2021/2022</li>
+									<li>Expected to graduate June 2024</li>
+								</ul>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Diploma in Information and Technology</h3>
+							<p>2018 — 2021</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Multimedia University, Cyberjaya</h4>
+							<ul>
+								<li>Graduated with a CGPA of 3.15</li>
+								<li>Dean's List Trimester 1 (GPA of 3.89) - 2020/2021</li>
+							</ul>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+
+				</div> <!-- /timeline-wrap -->   			
+
+			</div> <!-- /col-twelve -->
+			
+		</div> <!-- /resume-timeline -->
+			
+		</section> <!-- /features -->
+
+
+		<!-- Portfolio Section
+	================================================== -->
+		<section id="portfolio">
+
+			<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Portfolio</h5>
+				<h1>Check Out Some of My Works.</h1>
+
+			</div>   		
+		</div> <!-- /section-intro--> 
+
+		<div class="row portfolio-content">
+
+			<div class="col-twelve">
+
+				<!-- portfolio-wrapper -->
+				<div id="folio-wrapper" class="block block-mob-full stack">
+
+					<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="images/portfolio/swims2.jpeg" alt="Swims">
+						<a href="#modal-01" class="overlay">	                  	           
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+										<h3 class="folio-title">Sabah Workers Integrated Management System (SWIMS)</h3>	     					    
+											<span class="folio-types">
+											Front-end Development
+										</span>
+									</div>	                      	
+							</div>                    
+						</a>
+					</div>	               
+						</div> <!-- /folio-item -->
+
+						<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="images/portfolio/book2wash.jpg" alt="book2wash">
+						<a href="#modal-02" class="overlay">              		                  
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Software Engineering Fundamentals Assignment</h3>	     					    
+											<span class="folio-types">
+												Web Design
+										</span>		     		
+									</div> 	                      	
+							</div>                    
+						</a>
+					</div>
+						</div> <!-- /folio-item -->
+
+					<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="images/portfolio/m-s2o.jpg"alt="s2o">
+						<a href="#modal-03" class="overlay">             		                  
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Sit2Order (Final Year Project)</h3>	     					    
+											<span class="folio-types">
+											App/Web Development
+										</span>		     		
+									</div> 	                      	
+							</div>                    
+						</a>
+					</div>
+						</div> <!-- /folio-item -->
+
+					
+
+					<!-- modal popups - begin
+					============================================================= -->
+					<div id="modal-01" class="popup-modal slider mfp-hide">	
+
+							<div class="media">
+								<img src="images/portfolio/modals/swims1.jpeg" alt="" />
+							</div>      	
+
+						<div class="description-box">
+							<h4>Sabah Workers Integrated Management System (SWIMS)</h4>		      
+							<p>Developed an interactive and responsive web application with a modern front-end framework and an intuitive user interface using Bootstrap.</p>
+
+							<div class="categories">Front-end Development</div>			               
+						</div>
+
+						<div class="link-box">
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>		      
+
+					</div> <!-- /modal-01 -->
+
+					<div id="modal-02" class="popup-modal slider mfp-hide">	
+
+							<div class="media">
+								<img src="images/portfolio/modals/book2wash2.jpg" alt="" />
+							</div>      	
+
+						<div class="description-box">
+							<h4>Software Engineering Fundamentals Assignment</h4>		      
+							<p>Designed a concept application/website called Book2Wash on Figma.</p>
+
+							<div class="categories">Web Design</div>			               
+						</div>
+
+						<div class="link-box">
+							<a href="https://www.figma.com/file/RnQkjrUVPhyGzQ24bSvjvg/Book2Order?type=design&mode=design&t=PKljuxKZzXDBksdz-1">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>		      
+
+					</div> <!-- /modal-02 -->
+
+					<div id="modal-03" class="popup-modal slider mfp-hide">	
+
+							<div class="media">
+								<img src="images/portfolio/modals/m-s2o.jpg" alt="" />
+							</div>      	
+
+						<div class="description-box">
+							<h4>Sit2Order (Final Year Project)</h4>		      
+							<p>Me and my team have developed Sit2Order, a responsive web application using the Laravel framework for a food ordering system. It offers a seamless and user-friendly experience, allowing customers to browse menus, customize orders, and place them effortlessly from any device. Sit2Order integrates smoothly with restaurant systems, ensuring efficient order management. Our team has revolutionized the food ordering experience, providing convenience, efficiency, and customer satisfaction.</p>
+
+							<div class="categories">App/Web Development</div>			               
+						</div>
+
+						<div class="link-box">
+							<a href="https://github.com/Scan2Order/Sit2Order">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>		      
+
+					</div> <!-- /modal-03 -->
+
+
+					<!-- modal popups - end
+					============================================================= -->
+
+				</div> <!-- /portfolio-wrapper --> 
+
+			</div>  <!-- /twelve -->   
+
+		</div> <!-- /portfolio-content --> 
+			
+		</section> <!-- /portfolio --> 
+
+
+		<!-- CTA Section
+	================================================== -->
+		<section id="cta" class="grey-section">
+
+		<div class="row cta-content">
+
+			<div class="col-twelve section-ads">  
+
+					<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+
+				<p class="lead">
+				Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+					Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
+					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
+					</p>
+
+					<div class="action">
+					<a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+				</div>		     	
+
+			</div>
+
+		</div> <!-- /cta-content -->
+
+	</section> <!-- /cta --> 
+
+		
+		<!-- services Section
+	================================================== -->
+		<section id="services">
+
+			<div class="overlay"></div>
+
+			<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Services</h5>
+				<h1>What Can I Do For You?</h1>
+
+				<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+			</div>   		
+		</div> <!-- /section-intro -->
+
+		<div class="row services-content">
+
+			<div id="owl-slider" class="owl-carousel services-list">
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-earth"></i></span>            
+
+					<div class="service-content">	
+
+						<h3>Webdesign</h3>
+
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+						</p>
+						
+					</div> 	         	 
+
+					</div> <!-- /service -->
+
+					<div class="service">	
+
+						<span class="icon"><i class="icon-window"></i></span>                          
+
+					<div class="service-content">	
+
+						<h3>Web Development</h3>  
+
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+						</p>
+
+					</div>	                          
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-paint-brush"></i></span>		            
+
+					<div class="service-content">
+
+						<h3>Branding</h3>
+
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+							</p> 
+
+					</div> 	            	               
+
+				</div> <!-- /service -->
+
+					<div class="service">
+
+						<span class="icon"><i class="icon-toggles"></i></span>	              
+
+					<div class="service-content">
+
+						<h3>UI/UX Design</h3>
+
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+						</p> 
+						
+					</div>                
+
+					</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-image"></i></span>	            
+
+					<div class="service-content">
+
+						<h3>Graphics Design</h3>
+
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+							</p> 
+
+					</div>	               
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-chat"></i></span>	   	           
+
+					<div class="service-content">
+
+						<h3>Consultancy</h3>
+
+						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+							</p> 
+							
+					</div>	               
+
+				</div> <!-- /service -->
+
+			</div> <!-- /services-list -->
+			
+		</div> <!-- /services-content -->
+			
+		</section> <!-- /services -->	
+
+
+		<!-- stats Section
+	================================================== -->
+		<section id="stats" class="count-up">
+
+			<div class="row">
+				<div class="col-twelve">
+
+					<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-pencil-ruler"></i>
+							</div>
+
+							<h3 class="stat-count">
+								1500
+							</h3>
+
+							<h5 class="stat-title">
+								Projects Completed
+							</h5>
+
+						</div> <!-- /stat -->					
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-users"></i>
+							</div>
+
+							<h3 class="stat-count">
+								900
+							</h3>
+
+							<h5 class="stat-title">
+								Happy Clients
+							</h5>
+
+						</div> <!-- /stat -->
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-badge"></i>
+							</div>
+
+							<h3 class="stat-count">
+								200
+							</h3>
+
+							<h5 class="stat-title">
+								Awards Received
+							</h5>
+
+						</div> <!-- /stat -->									
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-light-bulb"></i>
+							</div>
+
+							<h3 class="stat-count">
+								120
+							</h3>
+
+							<h5 class="stat-title">
+								Crazy Ideas
+							</h5>
+
+						</div> <!-- /stat -->
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-cup"></i>
+							</div>
+
+							<h3 class="stat-count">
+								1500
+							</h3>
+
+							<h5 class="stat-title">
+								Coffee Cups
+							</h5>
+
+						</div> <!-- /stat -->
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-clock"></i>
+							</div>
+
+							<h3 class="stat-count">
+								7200
+							</h3>
+
+							<h5 class="stat-title">
+								Hours
+							</h5>
+
+						</div> <!-- /stat -->
+
+					</div> <!-- /stats-list -->
+
+				</div> <!-- /twelve -->
+			</div> <!-- /row -->
+
+		</section> <!-- /stats -->
+
+		
+	<!-- contact
+	================================================== -->
+		<section id="contact">
+
+			<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Contact</h5>
+				<h1>I'd Love To Hear From You.</h1>
+
+				<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+			</div> 
+		</div> <!-- /section-intro -->
+
+		<div class="row contact-form">
+
+			<div class="col-twelve">
+
+				<!-- form -->
+				<form name="contactForm" id="contactForm" method="post" action="">
+					<fieldset>
+
+					<div class="form-field">
+							<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+					</div>
+					<div class="form-field">
+						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+					</div>
+					<div class="form-field">
+							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+					</div>                       
+					<div class="form-field">
+							<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+					</div>                      
+					<div class="form-field">
+						<button class="submitform">Submit</button>
+						<div id="submit-loader">
+							<div class="text-loader">Sending...</div>                             
+							<div class="s-loader">
+										<div class="bounce1"></div>
+										<div class="bounce2"></div>
+										<div class="bounce3"></div>
+									</div>
+								</div>
+					</div>
+
+					</fieldset>
+				</form> <!-- Form End -->
+
+				<!-- contact-warning -->
+				<div id="message-warning">            	
+				</div>            
+				<!-- contact-success -->
+				<div id="message-success">
+				<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				</div>
+
+			</div> <!-- /col-twelve -->
+			
+		</div> <!-- /contact-form -->
+
+		<div class="row contact-info">
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-pin"></i>
+				</div>
+
+				<h5>Where to find me</h5>
+
+				<p>
+				1600 Amphitheatre Parkway<br>
+				Mountain View, CA<br>
+				94043 US
+				</p>
+
+			</div>
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+					<i class="icon-mail"></i>
+				</div>
+
+				<h5>Email Me At</h5>
+
+				<p>someone@kardswebsite.com<br>
+					info@kardswebsite.com			     
+				</p>
+
+			</div>
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-phone"></i>
+				</div>
+
+				<h5>Call Me At</h5>
+
+				<p>Phone: (+63) 555 1212<br>
+					Mobile: (+63) 555 0100<br>
+						Fax: (+63) 555 0101
+				</p>
+
+			</div>
+			
+		</div> <!-- /contact-info -->
+			
+		</section> <!-- /contact -->
+
+
+	<!-- footer
+	================================================== -->
+
+	<footer>
+			<div class="row">
+
+				<div class="col-six tab-full pull-right social">
+
+					<ul class="footer-social">        
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-behance"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul> 
+					
+			</div>
+
+			<div class="col-six tab-full">
+				<div class="copyright">
+						<span>© Copyright Kards 2016.</span> 
+						<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+					</div>		                  
+				</div>
+
+				<div id="go-top">
+					<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+				</div>
+
+			</div> <!-- /row -->     	
+	</footer>  
+
+	<div id="preloader"> 
+			<div id="loader"></div>
+	</div> 
+
+	<!-- Java Script
+	================================================== --> 
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+
+	</html>
